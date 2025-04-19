@@ -485,7 +485,7 @@ textarea {
 }
 
 .cloud-mask {
-  width: 100%;
+  width: 1500px;
   height: 100%;
   background-image: url('assets/img/park.jpg');
   background-size: cover;
