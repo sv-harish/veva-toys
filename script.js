@@ -31,7 +31,7 @@ function fibonacciEase(index) {
    Parallax in Hero Section
 -------------------------------- */
 gsap.to(".hero-illustration img", {
-  x: -100, // or however much you want it to move left
+  x: -100, // adjust the amount of movement
   scrollTrigger: {
     trigger: ".hero-section",
     start: "top top",
@@ -42,16 +42,16 @@ gsap.to(".hero-illustration img", {
 
 
 
-gsap.to(".header-blob", {
-  scrollTrigger: {
-    trigger: ".hero-section",
-    start: "top top",
-    scrub: true
-  },
-  x: -40,
-  y: -50,
-  ease: "power1.out"
-});
+// gsap.to(".header-blob", {
+//   scrollTrigger: {
+//     trigger: ".hero-section",
+//     start: "top top",
+//     scrub: true
+//   },
+//   x: -40,
+//   y: -50,
+//   ease: "power1.out"
+// });
 
 /* -------------------------------
    3D Holographic Tilt Logic
@@ -131,12 +131,33 @@ document.querySelectorAll(".card-container").forEach((container) => {
     fg.style.transform = "translateZ(60px) scale(1)";
   });
 });
-gsap.to(".hero-image img", {
+
+// gsap.to(".hero-image img", {
+//   scrollTrigger: {
+//     trigger: ".hero-section",
+//     start: "top top",
+//     scrub: true
+//   },
+//   x: -60,
+//   ease: "power2.out"
+// });
+
+/* -------------------------------
+   Scroll-Triggered Cloud Mask Animation
+-------------------------------- */
+const mask = document.querySelector('.cloud-mask');
+const container = document.querySelector('.cloud-mask-container');
+
+gsap.to(container, {
+  x: -200, // how far the cloud shape moves
   scrollTrigger: {
     trigger: ".hero-section",
     start: "top top",
-    scrub: true
-  },
-  x: -60,
-  ease: "power2.out"
+    scrub: true,
+    onUpdate: (self) => {
+      const progress = self.progress.toFixed(3);
+      // move the background in opposite direction
+      mask.style.backgroundPositionX = `${progress * 200}px`;
+    }
+  }
 });
