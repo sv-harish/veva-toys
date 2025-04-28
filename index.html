@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
   <script src="script.js" defer></script>
@@ -18,64 +19,160 @@
   <header class="navbar">
     <div class="container nav-container">
       <div class="logo">
-        <img src="assets/img/veva-logo.png" alt="Veva Logo">
-      </div>
-      <nav>
+        <a href="#hero">
+          <img src="assets/img/veva-logo.png" alt="Veva Toys Logo" />
+        </a>
+      </div>      
+      <nav class="main-nav">
+        
         <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#why-veva">Why Veva</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#oem">OEM</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" id="nav-home">Home</a></li>
+          <li><a href="#why-veva" id="nav-whyveva">Why Veva</a></li>
+          <li><a href="#products" id="nav-products">Products</a></li>
+          <li><a href="#certifications" id="nav-certifications">Certifications</a></li>
+          <li><a href="#contact" id="nav-oem">OEM</a></li>
+          <li><a href="#contact" id="nav-contact">Contact</a></li>
         </ul>
+
+        <!-- Toggle Button for Light/Dark Mode -->
+        <div class="theme-toggle-wrapper">
+          <button class="toggle" id="theme-toggle" aria-pressed="false" title="Toggle dark mode">
+            <span class="toggle__content">
+              <span class="toggle__indicator-wrapper">
+                <span class="toggle__indicator">  
+                  <span class="toggle__star sun"></span>
+                  <span class="toggle__star moon">
+                    <span class="moon__crater" style="--size: 10; --x: 45; --y: 20;"></span>
+                    <span class="moon__crater" style="--size: 8; --x: 20; --y: 30;"></span>
+                    <span class="moon__crater" style="--size: 6; --x: 60; --y: 50;"></span>
+                  </span>
+                </span>
+              </span>
+        
+              <svg class="toggle__backdrop clouds" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <path d="M0 50 Q 20 20 40 50 T 80 50 T 120 50 V 50 Z"></path>
+              </svg>
+        
+              <svg class="toggle__backdrop stars" viewBox="0 0 100 50" preserveAspectRatio="none">
+                <g><path d="M10 10h0"></path></g>
+                <g><path d="M30 20h0"></path></g>
+                <g><path d="M50 10h0"></path></g>
+                <g><path d="M70 20h0"></path></g>
+                <g><path d="M90 10h0"></path></g>
+                <g><path d="M20 40h0"></path></g>
+                <g><path d="M40 30h0"></path></g>
+                <g><path d="M60 40h0"></path></g>
+                <g><path d="M80 30h0"></path></g>
+                <g><path d="M50 50h0"></path></g>
+              </svg>
+            </span>
+          </button>
+        </div>  
+
+        <button class="hamburger" id="hamburger-toggle" aria-label="Menu Toggle" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        
       </nav>
+
     </div>
-  </header>  
+
+    <div class="header-color-bar">
+      <div class="color green"></div>
+      <div class="color yellow"></div>
+      <div class="color blue"></div>
+      <div class="color pink"></div>
+    </div>  
+    
+  </header> 
+
+  
+
+  
 
   <!-- Hero Section -->
-  <section id="hero" class="hero-section">
+  <!-- <section id="hero" class="hero-section">
     <div class="hero-background">
       <div class="cloud-mask-container">
         <div class="cloud-mask"></div>
-      </div>
+      </div> -->
     
       <!-- ✅ RC Car image placed outside mask logic -->
-      <div class="hero-illustration">
+      <!-- <div class="hero-illustration">
         <img src="assets/img/hero/rc-car-1.png" alt="RC Car" />
       </div>
     </div>
     
     <div class="container hero-content">
       <div class="hero-text">
-        <h1>India’s Trusted RC Toy Manufacturer</h1>
-        <p>4 of India’s Top 6 RC Cars Are Made by Veva — And We’re Just Getting Started</p>
+        <h1 id="hero-title">India’s Trusted RC Toy Manufacturer</h1>
+        <p id="hero-subtitle">4 of India’s Top 6 RC Cars Are Made by Veva — And We’re Just Getting Started</p>
         <div class="cta-buttons">
-          <a href="#products" class="btn-primary">View Our Products</a>
-          <a href="#oem" class="btn-secondary">Start Your OEM Project</a>
-        </div>        
+          <a href="#products" class="btn-primary" id="btn-view-products">View Our Products</a>
+          <a href="#oem" class="btn-secondary" id="btn-start-oem">Start Your OEM Project</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="hero" class="hero-section">
+    <div class="hero-background">
+      <div class="cloud-mask-container">
+        <div class="cloud-mask"></div>
+      </div>
+    </div>
+  
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1 id="hero-title">India’s Trusted RC Toy Manufacturer</h1>
+        <p id="hero-subtitle">4 of India’s Top 6 RC Cars Are Made by Veva — And We’re Just Getting Started</p>
+        <div class="cta-buttons">
+          <a href="#products" class="btn-primary" id="btn-view-products">View Our Products</a>
+          <a href="#contact" class="btn-secondary" id="btn-start-oem">Start Your OEM Project</a>
+        </div>
+      </div>
+  
+      <!-- ✅ Move hero-illustration inside hero-content -->
+      <div class="hero-illustration">
+        <img src="assets/img/hero/rc-car-1.png" alt="RC Car" />
       </div>
     </div>
   </section>
+  
+  <!-- Park and Boy Section (Mobile/Tablet Only) -->
+  <section id="mobile-park-boy" class="mobile-park-boy-section">
+    <div class="mobile-park-container">
+      <img src="assets/img/park.jpg" alt="Park Background" class="park-bg-mobile" />
+      <img src="assets/img/hero/rc-car-1.png" alt="Boy Playing with RC Car" class="boy-rc-mobile" />
+    </div>
+  </section>  
+
   
   <!-- Why Veva -->
   <section id="why-veva" class="why-veva-section">
     <div class="container">
       <div class="why-veva-grid">
         <div class="why-veva-text">
-          <h2>Where Precision Meets Purpose</h2>
-          <p class="subtitle">
+          <h2 id="whyveva-title">Where Precision Meets Purpose</h2>
+          <p class="subtitle" id="whyveva-subtitle">
             Our toys aren’t just assembled — they’re engineered with pride, precision, and people-first design.
           </p>
           <ul class="why-points">
-            <li>45-day training</li>
-            <li>In-house painting</li>
-            <li>Soldering and wiring</li>
-            <li>Custom packaging</li>
+            <li id="whyveva-point1">45-day training</li>
+            <li id="whyveva-point2">In-house painting</li>
+            <li id="whyveva-point3">Soldering and wiring</li>
+            <li id="whyveva-point4">Custom packaging</li>
           </ul>
         </div>
         <div class="why-veva-image">
-          <img src="assets/img/overview-factory-bg.web.png" alt="Factory Women Workers" />
+          <div class="factory-bg">
+            <img src="assets/img/overview-factory-bg.web.png" alt="Factory Women Workers" />
+          </div>
+          <div class="worker-img">
+            <img src="assets/img/worker.png" alt="Worker" />
+          </div>
         </div>
       </div>
     </div>
@@ -83,7 +180,7 @@
 
   <section id="products" class="products-section">
     <div class="container">
-      <h2 class="section-title">RC Cars, Die-Cast Toys, Semi-Electronics</h2>
+      <h2 class="section-title" id="products-title">RC Cars, Die-Cast Toys, Semi-Electronics</h2>
       <div class="product-card-grid">
         
         <!-- Product Card 1 -->
@@ -93,13 +190,19 @@
               <div class="card-image background-img">
                 <img src="assets/img/products/background.jpg" alt="BG" />
               </div>
-              <div class="card-image foreground-img">
+              <div class="foreground-img">
                 <img src="assets/img/products/diecasttra.png" alt="Diecast" />
+              
+                <ul class="card-features">
+                  <li>2 Speed Modes: Normal & Turbo</li>
+                  <li>4 Modes of Headlights</li>
+                  <li>75 Feet Remote Range</li>
+                </ul>
               </div>
             </div>
             <div class="card-content">
-              <h3>RC Nitro Beast</h3>
-              <p>Torque, traction, total chaos — built for business.</p>
+              <h3 id="product1-name">RC Nitro Beast</h3>
+              <p id="product1-desc">Torque, traction, total chaos — built for business.</p>
             </div>
           </div>
         </div>
@@ -111,13 +214,19 @@
               <div class="card-image background-img">
                 <img src="assets/img/products/background.jpg" alt="BG" />
               </div>
-              <div class="card-image foreground-img">
+              <div class="foreground-img">
                 <img src="assets/img/products/rc-toy.png" alt="RC Truck" />
+
+                <ul class="card-features">
+                  <li>High Power Motor & Smooth Suspension</li>
+                  <li>Multi-direction Drive + Drift</li>
+                  <li>60 Min Runtime, C-Type Charging</li>
+                </ul>
               </div>
             </div>
             <div class="card-content">
-              <h3>Off-Road King</h3>
-              <p>Built like a beast. Drives like a dream.</p>
+              <h3 id="product2-name">Off-Road King</h3>
+              <p id="product2-desc">Built like a beast. Drives like a dream.</p>
             </div>
           </div>
         </div>
@@ -129,13 +238,19 @@
               <div class="card-image background-img">
                 <img src="assets/img/products/background.jpg" alt="BG" />
               </div>
-              <div class="card-image foreground-img">
+              <div class="foreground-img">
                 <img src="assets/img/products/sem-electronic.png" alt="Funny Fishing" />
+                <ul class="card-features">
+                  <li>24 Colorful Fishes with Magnetic Rods</li>
+                  <li>Colorful Lights & USB Charging</li>
+                  <li>Wheels & Handle for Easy Moving</li>
+                </ul>
               </div>
+              
             </div>
             <div class="card-content">
-              <h3>Funny Fishing</h3>
-              <p>Light-up, portable, and kid-approved.</p>
+              <h3 id="product3-name">Funny Fishing</h3>
+              <p id="product3-desc">Light-up, portable, and kid-approved.</p>
             </div>
           </div>
         </div>
@@ -147,15 +262,48 @@
   <!-- Certifications Section -->
   <section id="certifications" class="certifications-section">
     <div class="container">
-      <h2 class="section-title">Certified to Perform. Built to Scale.</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title" id="certifications-title">Certified to Perform. Built to Scale.</h2>
+      <p class="section-subtitle" id="certifications-subtitle">
         Our toys meet the standards that matter — for safety, quality, and global reach.
       </p>
       <div class="certifications">
-        <div class="cert-card"><img src="assets/img/certs/bis.png" alt="BIS" /></div>
-        <div class="cert-card"><img src="assets/img/certs/en71.png" alt="EN71" /></div>
-        <div class="cert-card"><img src="assets/img/certs/iso.png" alt="ISO" /></div>
-        <div class="cert-card"><img src="assets/img/certs/sedex.png" alt="Sedex" /></div>
+        <div class="cert-card">
+          <img src="assets/img/certs/bis.png" alt="BIS Certification">
+        </div>
+        <div class="cert-card">
+          <img src="assets/img/certs/en71.png" alt="EN71 Certification">
+        </div>
+        <div class="cert-card">
+          <img src="assets/img/certs/iso.png" alt="ISO Certification">
+        </div>
+        <div class="cert-card">
+          <img src="assets/img/certs/sedex.png" alt="SEDEX Certification">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section id="partners" class="partners-section">
+    <div class="container">
+      <h2 class="section-title" id="partners-title">Certified to Perform. Built to Scale.</h2>
+      <p class="section-subtitle" id="partners-subtitle">
+        Our toys meet the standards that matter — for safety, quality, and global reach.
+      </p>
+      <div class="partners-carousel">
+        <div class="partners-track">
+          <img src="assets/img/logos/logo-amazon.png" alt="Certification 1">
+          <img src="assets/img/logos/logo-bigbazaar.png" alt="Certification 2">
+          <img src="assets/img/logos/logo-dmart.png" alt="Certification 3">
+          <img src="assets/img/logos/logo-firstcry.png" alt="Certification 4">
+          <img src="assets/img/logos/logo-flipkart.png" alt="Certification 5">
+          <img src="assets/img/logos/logo-hamleys.png" alt="Certification 6">
+          <img src="assets/img/logos/logo-reliance.png" alt="Certification 7">
+          <img src="assets/img/logos/logo-smartbazaar.png" alt="Certification 8">
+          <img src="assets/img/logos/logo-spencers.png" alt="Certification 9">
+          <!-- Repeat logos once more for smooth infinite scroll -->
+
+        </div>
       </div>
     </div>
   </section>
@@ -163,20 +311,22 @@
   <!-- OEM Section -->
   <section id="oem" class="oem-section">
     <div class="container">
-      <h2 class="section-title">Your Brand, Our Manufacturing Power</h2>
-      <p class="section-subtitle">From sketches to shelves — Veva delivers speed, scale, and private-label precision.</p>
+      <h2 class="section-title" id="oem-title">Your Brand, Our Manufacturing Power</h2>
+      <p class="section-subtitle" id="oem-subtitle">
+        From sketches to shelves — Veva delivers speed, scale, and private-label precision.
+      </p>
       <div class="oem-features">
-        <div class="oem-card"><img src="assets/img/icons/mold.png" alt="Molds" /><h3>Custom Molds</h3></div>
-        <div class="oem-card"><img src="assets/img/icons/packaging.png" alt="Packaging" /><h3>Packaging</h3></div>
-        <div class="oem-card"><img src="assets/img/icons/tooling.png" alt="Tooling" /><h3>Tooling</h3></div>
-        <div class="oem-card"><img src="assets/img/icons/branding.png" alt="Branding" /><h3>Private Label</h3></div>
-        <div class="oem-card"><img src="assets/img/icons/quality.png" alt="QC" /><h3>QC</h3></div>
-        <div class="oem-card"><img src="assets/img/icons/scale.png" alt="Scale" /><h3>Scalable</h3></div>
+        <div class="oem-card"><img src="assets/img/icons/mold.png" alt="Molds" /><h3 id="oem-feature1">Custom Molds</h3></div>
+        <div class="oem-card"><img src="assets/img/icons/packaging.png" alt="Packaging" /><h3 id="oem-feature2">Packaging</h3></div>
+        <div class="oem-card"><img src="assets/img/icons/tooling.png" alt="Tooling" /><h3 id="oem-feature3">Tooling</h3></div>
+        <div class="oem-card"><img src="assets/img/icons/branding.png" alt="Branding" /><h3 id="oem-feature4">Private Label</h3></div>
+        <div class="oem-card"><img src="assets/img/icons/quality.png" alt="QC" /><h3 id="oem-feature5">QC</h3></div>
+        <div class="oem-card"><img src="assets/img/icons/scale.png" alt="Scale" /><h3 id="oem-feature6">Scalable</h3></div>
       </div>
       <div class="oem-cta">
-        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+        <button class="btn-primary" id="btn-start-oem2" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
           Start Your OEM Project
-        </button>
+        </button>        
       </div>
     </div>
   </section>
@@ -184,23 +334,50 @@
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <h2 class="section-title">Let’s Build Something That Sells Out</h2>
-      <p class="section-subtitle">Tell us what you need — we’ll show you how we deliver.</p>
-      <form class="contact-form">
+      <h2 class="section-title" id="contact-title">Let’s Build Something That Sells Out</h2>
+      <p class="section-subtitle" id="contact-subtitle">
+        Tell us what you need — we’ll show you how we deliver.
+      </p>
+
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xnndnyrg" method="POST">
         <div class="form-grid">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="text" name="company" placeholder="Company" required />
-          <input type="text" name="role" placeholder="Your Role" />
-          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="name" id="contact-name" placeholder="Your Name" required />
+          <input type="text" name="company" id="contact-company" placeholder="Company" required />
+          <input type="text" name="role" id="contact-role" placeholder="Your Role" />
+          <input type="email" name="email" id="contact-email" placeholder="Email" required />
         </div>
-        <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-        <button type="submit" class="btn-primary">Submit Inquiry</button>
+        <textarea name="message" id="contact-message" rows="5" placeholder="Tell us about your project..." required></textarea>
+        <button type="submit" class="btn-primary" id="contact-submit">Submit Inquiry</button>
       </form>
+      <div id="form-success-message" style="display:none; color: #34A853; font-weight: bold; margin-top: 1rem;">
+        Submitted Successfully!
+      </div>      
     </div>
   </section>
 
   <!-- Scroll to Top Button -->
-  <button class="scroll-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+  <button class="scroll-top-btn" onclick="scrollToTop()">↑</button>
+
+  <!-- Language Selection Popup -->
+  <div class="language-popup" id="language-popup">
+    <div class="language-popup-content">
+      <h2>Select Your Language</h2>
+      <div class="language-buttons">
+        <button class="btn-primary" id="select-english">English 🇬🇧</button>
+        <button class="btn-secondary" id="select-spanish">Español 🇪🇸</button>
+        <button class="btn-secondary" id="select-german">Deutsch 🇩🇪</button>
+        <button class="btn-secondary" id="select-french">Français 🇫🇷</button>
+        <button class="btn-secondary" id="select-arabic">العربية 🇸🇦</button>
+        
+        <button class="btn-secondary" id="select-portuguese">Português 🇵🇹</button>
+        <button class="btn-secondary" id="select-japanese">日本語 🇯🇵</button>
+        <button class="btn-secondary" id="select-italian">Italiano 🇮🇹</button>
+        <button class="btn-secondary" id="select-chinese">中文 🇨🇳</button>
+        <button class="btn-secondary" id="select-russian">Русский 🇷🇺</button>
+      </div>
+      
+    </div>
+  </div>
 
 </body>
 </html>
