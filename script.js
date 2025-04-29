@@ -176,7 +176,13 @@ const textES = {
         name: "Modelo No.: VERC3457-MG",
         description: "Sedán de grado militar, preparado para misiones definitivas.",
         features: ["Control Multidireccional de Precisión"]
-      }
+      },
+      {
+        name: "Modelo No.: VERC3458-G1",
+        description: "Sedán estilo graffiti para carreras audaces.",
+        features: ["Corredor Urbano Graffiti"]
+      },
+      
       
     ]
   },
@@ -282,6 +288,11 @@ const textDE = {
         description: "Militärgrad-Sedan, bereit für ultimative Missionen.",
         features: ["Präzise Mehrwege-Steuerung"]
       },      
+      {
+        name: "Modellnr.: VERC3458-G1",
+        description: "Graffiti-Stil Limousine für mutige Rennen.",
+        features: ["Graffiti Stadtflitzer"]
+      },      
     ]
   },
   certifications: {
@@ -385,6 +396,11 @@ const textFR = {
         name: "Modèle N°: VERC3457-MG",
         description: "Berline de qualité militaire, prête pour des missions ultimes.",
         features: ["Contrôle Multidirectionnel de Précision"]
+      },
+      {
+        name: "Modèle N°: VERC3458-G1",
+        description: "Berline style graffiti pour courses audacieuses.",
+        features: ["Coureur Urbain Graffiti"]
       },
       
     ]
@@ -490,6 +506,11 @@ const textAR = {
         description: "سيدان بدرجة عسكرية، مجهز لمهام حاسمة.",
         features: ["تحكم متعدد الاتجاهات بدقة"]
       },
+      {
+        name: "رقم الموديل: VERC3458-G1",
+        description: "سيارة سيدان بطراز الجرافيتي لسباقات جريئة.",
+        features: ["متسابق حضري جرافيتي"]
+      },
       
     ]
   },
@@ -594,7 +615,12 @@ const textPT = {
         description: "Sedã de grau militar, preparado para missões definitivas.",
         features: ["Controle Multidirecional de Precisão"]
       },
-
+      {
+        name: "Modelo Nº: VERC3458-G1",
+        description: "Sedã estilo graffiti para corridas ousadas.",
+        features: ["Corredor Urbano Graffiti"]
+      },
+      
     ]
   },
   certifications: {
@@ -698,7 +724,11 @@ const textJA = {
         description: "ミリタリーグレードのセダン、究極のミッションに対応。",
         features: ["高精度マルチディレクションコントロール"]
       },
-      
+      {
+        name: "モデル番号: VERC3458-G1",
+        description: "グラフィティスタイルのセダンで大胆にレース。",
+        features: ["グラフィティアーバンレーサー"]
+      },      
     ]
   },
   certifications: {
@@ -799,8 +829,13 @@ const textRU = {
       },
       {
         name: "Модель №: VERC3457-MG",
-        description: "Седан военного класса, готовый к решающим миссиям.",
+        description: "Седан военного класса, готовый к решающим миссиям.",                     
         features: ["Прецизионное многопозиционное управление"]
+      },
+      {
+        name: "Модель №: VERC3458-G1",
+        description: "Седан в стиле граффити для дерзких гонок.",
+        features: ["Городской Граффити-Гонщик"]
       },
       
     ]
@@ -907,7 +942,12 @@ const textIT = {
         description: "Berlina di grado militare, pronta per missioni definitive.",
         features: ["Controllo Multidirezionale di Precisione"]
       },
-
+      {
+        name: "Numero Modello: VERC3458-G1",
+        description: "Berlina in stile graffiti per corse audaci.",
+        features: ["Corridore Urbano Graffiti"]
+      },
+      
 
     ]
   },
@@ -1011,6 +1051,11 @@ const textZH = {
         name: "型号: VERC3457-MG",
         description: "军用级轿车，专为终极任务打造。",
         features: ["精密多方向控制"]
+      },
+      {
+        name: "型号: VERC3458-G1",
+        description: "涂鸦风格轿车，专为大胆竞速打造。",
+        features: ["涂鸦城市赛车"]
       },
       
     ]
@@ -1514,12 +1559,11 @@ document.addEventListener("DOMContentLoaded", function() {
   // If non-Arabic selected, force back to LTR (English, Spanish, German, French)
   [btnEnglish, btnSpanish, btnGerman, btnFrench].forEach(btn => {
     btn.addEventListener('click', () => {
-      event.preventDefault();
       document.body.setAttribute("dir", "ltr");
-      window.scrollTo(0, 0); /* 🌸 New Line */
+      window.scrollTo(0, 0);
     });
   });
-
+  
   // Portuguese 🇵🇹
   btnPortuguese.addEventListener('click', () => {
     event.preventDefault();
@@ -1688,82 +1732,28 @@ form.addEventListener('submit', function(event) {
   });
 });
 
-// ===============================
-// Auto-Sliding Carousel Logic
-// ===============================
-
 const carousel = document.getElementById('product-carousel');
-let autoScrollInterval;
-let isUserInteracting = false;
+const prevArrow = document.getElementById('prev-arrow');
+const nextArrow = document.getElementById('next-arrow');
 
-// Function to start auto-scrolling
-function startAutoScroll() {
-  autoScrollInterval = setInterval(() => {
-    if (!isUserInteracting) {
-      carousel.scrollBy({
-        left: 320, // Move 320px (slightly more than card width to reach next card)
-        behavior: 'smooth'
-      });
-    }
-  }, 5000); // Every 3 seconds
-}
-
-// Function to stop auto-scrolling
-function stopAutoScroll() {
-  clearInterval(autoScrollInterval);
-}
-
-// Start auto-scroll on page load
-startAutoScroll();
-
-// Pause when user manually scrolls or touches
-carousel.addEventListener('mousedown', () => {
-  isUserInteracting = true;
-  stopAutoScroll();
-});
-carousel.addEventListener('touchstart', () => {
-  isUserInteracting = true;
-  stopAutoScroll();
-});
-
-// Resume after a short delay when user stops interacting
-carousel.addEventListener('mouseup', () => {
-  isUserInteracting = false;
-  setTimeout(startAutoScroll, 2000); // Resume after 2s
-});
-carousel.addEventListener('touchend', () => {
-  isUserInteracting = false;
-  setTimeout(startAutoScroll, 2000); // Resume after 2s
-});
-
-// ===============================
-// Snap Carousel to Nearest Card on Drag End
-// ===============================
-
-function snapToNearestCard() {
-  const cardWidth = 320 + 32; // 320px card + 32px gap (2rem = 32px gap)
-  const scrollLeft = carousel.scrollLeft;
-  const nearestIndex = Math.round(scrollLeft / cardWidth);
-  const snapPosition = nearestIndex * cardWidth;
-
-  carousel.scrollTo({
-    left: snapPosition,
+// Move carousel right
+nextArrow.addEventListener('click', () => {
+  const cardWidth = carousel.querySelector('.card-container').offsetWidth + 32; // adjust 32px if your gap is different
+  carousel.scrollBy({
+    left: cardWidth,
     behavior: 'smooth'
   });
-}
-
-// Modify mouseup/touchend listeners to also snap
-carousel.addEventListener('mouseup', () => {
-  isUserInteracting = false;
-  snapToNearestCard();
-  setTimeout(startAutoScroll, 2000); // Resume auto-scroll after 2s
 });
 
-carousel.addEventListener('touchend', () => {
-  isUserInteracting = false;
-  snapToNearestCard();
-  setTimeout(startAutoScroll, 2000); // Resume auto-scroll after 2s
+// Move carousel left
+prevArrow.addEventListener('click', () => {
+  const cardWidth = carousel.querySelector('.card-container').offsetWidth + 32;
+  carousel.scrollBy({
+    left: -cardWidth,
+    behavior: 'smooth'
+  });
 });
+
 
 // ===============================
 // Color Image Switching Logic
@@ -1780,6 +1770,10 @@ document.querySelectorAll('.color-selector').forEach(selector => {
     });
   });
 });
+
+
+
+
 
 
 
