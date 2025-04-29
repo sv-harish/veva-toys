@@ -31,17 +31,46 @@ const textEN = {
     title: "RC Toys, Die-Cast Toys, Semi-Electronics",
     items: [
       {
-        name: "Nitro Beast",
-        description: "Torque, traction, total chaos — built for business."
+        name: "RC Nitro Beast",
+        description: "Torque, traction, total chaos — built for business.",
+        features: ["2 Speed Modes: Normal & Turbo"]
       },
       {
-        name: "Off-Road King",
-        description: "Built like a beast. Drives like a dream."
+        name: "RC Drift Storm",
+        description: "Slide, sprint, and steal the show with electric-powered precision.",
+        features: ["45–60 Min Playtime"]
       },
       {
-        name: "Funny Fishing",
-        description: "Light-up, portable, and kid-approved."
-      }
+        name: "RC Spark GT",
+        description: "Lightweight design, perfect for RC drift racing.",
+        features: ["Ultra-Light Build & Speed"]
+      },
+      {
+        name: "RC Combat Runner",
+        description: "Camo design for tough RC action.",
+        features: ["Camo Body for Rugged Play"]
+      },
+      {
+        name: "RC Camo Blazer",
+        description: "Camo design, built for ultimate terrain conquest.",
+        features: ["Camo Build for Conquest"]
+      },
+      {
+        name: "Model No.: VERC3457-G1",
+        description: "Speed, Power, and Camo Adventure.",
+        features: ["Built for Power Play"]
+      },
+      {
+        name: "Model No.: VERC3457-MG",
+        description: "Military-grade sedan, loaded for ultimate missions.",
+        features: ["Precision Multi-Directional Control"]
+      },
+      {
+        name: "Model No.: VERC3458-G1",
+        description: "Graffiti-style sedan for bold racing.",
+        features: ["Graffiti Urban Racer"]
+      },            
+
     ]
   },
 
@@ -111,20 +140,44 @@ const textES = {
     ]
   },
   products: {
-    title: "Coches RC, Juguetes de Fundición, Semi-Electrónicos",
+    title: "Coches RC, Juguetes de Metal Fundido, Semi-Electrónicos",
     items: [
       {
         name: "RC Nitro Bestia",
-        description: "Torque, tracción, caos total — construido para los negocios."
+        description: "Par motor, tracción y caos total: construido para negocios.",
+        features: ["2 Modos de Velocidad: Normal y Turbo"]
       },
       {
-        name: "Rey Todo Terreno",
-        description: "Construido como una bestia. Conduce como un sueño."
+        name: "RC Tormenta de Deriva",
+        description: "Desliza, acelera y roba el espectáculo con precisión eléctrica.",
+        features: ["45–60 Minutos de Juego"]
       },
       {
-        name: "Pesca Divertida",
-        description: "Iluminado, portátil y aprobado por niños."
+        name: "RC Chispa GT",
+        description: "Diseño ligero, perfecto para carreras de derrape RC.",
+        features: ["Construcción Ultraligera y Rápida"]
+      },
+      {
+        name: "RC Corredor de Combate",
+        description: "Diseño camuflajeado para acción RC intensa.",
+        features: ["Carrocería Camuflajeada para Aventuras"]
+      },
+      {
+        name: "RC Blazer Camuflado",
+        description: "Diseño camuflado, hecho para conquistar terrenos extremos.",
+        features: ["Carrocería Camuflada para Conquistar"]
+      },
+      {
+        name: "Modelo No.: VERC3457-G1",
+        description: "Velocidad, potencia y aventura camuflada.",
+        features: ["Construido para Juego Potente"]
+      },
+      {
+        name: "Modelo No.: VERC3457-MG",
+        description: "Sedán de grado militar, preparado para misiones definitivas.",
+        features: ["Control Multidireccional de Precisión"]
       }
+      
     ]
   },
   certifications: {
@@ -192,20 +245,43 @@ const textDE = {
     ]
   },
   products: {
-    title: "RC-Autos, Druckguss-Spielzeuge, Semi-Elektronik",
+    title: "RC-Spielzeuge, Druckguss-Spielzeuge, Halb-Elektronik",
     items: [
       {
         name: "RC Nitro Bestie",
-        description: "Drehmoment, Traktion, totales Chaos — gebaut für das Geschäft."
+        description: "Drehmoment, Traktion und totales Chaos – gemacht für den Erfolg.",
+        features: ["2 Geschwindigkeitsmodi: Normal & Turbo"]
       },
       {
-        name: "Geländekönig",
-        description: "Gebaut wie ein Biest. Fährt sich wie ein Traum."
+        name: "RC Drift Sturm",
+        description: "Driften, sprinten und beeindrucken mit elektrischer Präzision.",
+        features: ["45–60 Minuten Spielzeit"]
       },
       {
-        name: "Lustiges Angeln",
-        description: "Leuchtet, tragbar und kinderfreundlich."
-      }
+        name: "RC Funken GT",
+        description: "Leichtes Design, perfekt für RC-Driftrennen.",
+        features: ["Ultraleichtes Design & Speed"]
+      },
+      {
+        name: "RC Kampf-Läufer",
+        description: "Tarn-Design für harte RC-Action.",
+        features: ["Tarnkarosserie für Abenteuer"]
+      },
+      {
+        name: "RC Tarn-Blazer",
+        description: "Tarn-Design, gebaut für extreme Geländeabenteuer.",
+        features: ["Tarnkarosserie für Eroberungen"]
+      },
+      {
+        name: "Modellnr.: VERC3457-G1",
+        description: "Geschwindigkeit, Kraft und Tarnabenteuer.",
+        features: ["Gebaut für Power-Action"]
+      },
+      {
+        name: "Modellnr.: VERC3457-MG",
+        description: "Militärgrad-Sedan, bereit für ultimative Missionen.",
+        features: ["Präzise Mehrwege-Steuerung"]
+      },      
     ]
   },
   certifications: {
@@ -273,20 +349,44 @@ const textFR = {
     ]
   },
   products: {
-    title: "Voitures RC, Jouets en Métal, Semi-Électroniques",
+    title: "Jouets RC, Jouets moulés sous pression, Semi-électroniques",
     items: [
       {
-        name: "RC Nitro Bête",
-        description: "Couple, traction, chaos total — construit pour le business."
+        name: "RC Nitro Monstre",
+        description: "Couple, traction et chaos total – conçu pour le succès.",
+        features: ["2 Modes de Vitesse : Normal et Turbo"]
       },
       {
-        name: "Roi Tout-Terrain",
-        description: "Construit comme une bête. Conduit comme un rêve."
+        name: "RC Tempête de Drift",
+        description: "Glissez, accélérez et impressionnez avec une précision électrique.",
+        features: ["45–60 minutes de jeu"]
       },
       {
-        name: "Pêche Amusante",
-        description: "Lumineux, portable et approuvé par les enfants."
-      }
+        name: "RC Étincelle GT",
+        description: "Conception légère, parfaite pour les courses de drift RC.",
+        features: ["Structure Ultralégère & Rapide"]
+      },
+      {
+        name: "RC Coureur de Combat",
+        description: "Design camouflage pour l'action RC intense.",
+        features: ["Carrosserie Camouflée pour l'Aventure"]
+      },
+      {
+        name: "RC Blazer Camouflé",
+        description: "Conception camouflage, faite pour conquérir les terrains extrêmes.",
+        features: ["Carrosserie Camouflée pour Conquête"]
+      },
+      {
+        name: "Modèle N°: VERC3457-G1",
+        description: "Vitesse, puissance et aventure camouflée.",
+        features: ["Conçu pour Jeu Puissant"]
+      },
+      {
+        name: "Modèle N°: VERC3457-MG",
+        description: "Berline de qualité militaire, prête pour des missions ultimes.",
+        features: ["Contrôle Multidirectionnel de Précision"]
+      },
+      
     ]
   },
   certifications: {
@@ -353,20 +453,44 @@ const textAR = {
     ]
   },
   products: {
-    title: "سيارات RC، ألعاب معدنية، شبه إلكترونية",
+    title: "ألعاب التحكم عن بعد، ألعاب معدنية مصبوبة، شبه إلكترونية",
     items: [
       {
         name: "وحش النيترو RC",
-        description: "عزم، جر، وفوضى كاملة — مصمم للأعمال."
+        description: "عزم دوران، تماسك، وفوضى تامة – مصمم للنجاح.",
+        features: ["وضعا سرعة: عادي وتوربو"]
       },
       {
-        name: "ملك الطرق الوعرة",
-        description: "مصمم مثل الوحش. يقود وكأنه حلم."
+        name: "عاصفة الانجراف RC",
+        description: "انجرف، انطلق، وأبهر بدقة كهربائية.",
+        features: ["شح45-60 دقيقة"]
       },
       {
-        name: "صيد ممتع",
-        description: "مضيء، محمول، ومعتمد للأطفال."
-      }
+        name: "آر سي سبارك جي تي",
+        description: "تصميم خفيف الوزن مثالي لسباقات الانجراف بالتحكم عن بعد.",
+        features: ["تصميم فائق الخفة والسرعة"]
+      },
+      {
+        name: "آر سي كومبات رانر",
+        description: "تصميم مموه لمغامرات RC الشاقة.",
+        features: ["هيكل مموه للقيادة الصعبة"]
+      },
+      {
+        name: "آر سي كامو بليزر",
+        description: "تصميم مموه، صُمم للسيطرة على التضاريس القاسية.",
+        features: ["هيكل مموه للانتصارات"]
+      },
+      {
+        name: "رقم الموديل: VERC3457-G1",
+        description: "السرعة والقوة ومغامرة التمويه.",
+        features: ["مصمم للعب القوي"]
+      },
+      {
+        name: "رقم الموديل: VERC3457-MG",
+        description: "سيدان بدرجة عسكرية، مجهز لمهام حاسمة.",
+        features: ["تحكم متعدد الاتجاهات بدقة"]
+      },
+      
     ]
   },
   certifications: {
@@ -433,20 +557,44 @@ const textPT = {
     ]
   },
   products: {
-    title: "Carros RC, Brinquedos de Metal Fundido, Semi-Eletrônicos",
+    title: "Brinquedos RC, Brinquedos de Metal Fundido, Semi-Eletrônicos",
     items: [
       {
-        name: "RC Nitro Monstro",
-        description: "Torque, tração, caos total — feito para negócios."
+        name: "RC Nitro Fera",
+        description: "Torque, tração e caos total – feito para vencer.",
+        features: ["2 Modos de Velocidade: Normal e Turbo"]
       },
       {
-        name: "Rei Off-Road",
-        description: "Construído como um monstro. Dirige como um sonho."
+        name: "RC Tempestade de Drift",
+        description: "Derrape, acelere e impressione com precisão elétrica.",
+        features: ["45–60 minutos de diversão"]
       },
       {
-        name: "Pesca Divertida",
-        description: "Iluminado, portátil e aprovado pelas crianças."
-      }
+        name: "RC Faísca GT",
+        description: "Design leve, perfeito para corridas de drift RC.",
+        features: ["Estrutura Ultraligeira & Veloz"]
+      },
+      {
+        name: "RC Corredor de Combate",
+        description: "Design camuflado para ação RC intensa.",
+        features: ["Carroceria Camuflada para Aventuras"]
+      },
+      {
+        name: "RC Blazer Camuflado",
+        description: "Design camuflado, feito para conquistar terrenos difíceis.",
+        features: ["Carroceria Camuflada para Conquistar"]
+      },
+      {
+        name: "Modelo Nº: VERC3457-G1",
+        description: "Velocidade, potência e aventura camuflada.",
+        features: ["Feito para Ação Potente"]
+      },
+      {
+        name: "Modelo Nº: VERC3457-MG",
+        description: "Sedã de grau militar, preparado para missões definitivas.",
+        features: ["Controle Multidirecional de Precisão"]
+      },
+
     ]
   },
   certifications: {
@@ -513,20 +661,44 @@ const textJA = {
     ]
   },
   products: {
-    title: "RCカー、ダイキャスト玩具、半電子製品",
+    title: "RCトイ、ダイキャストトイ、セミエレクトロニクス",
     items: [
       {
         name: "RCニトロビースト",
-        description: "トルク、トラクション、完全なカオス — ビジネス向けに構築。"
+        description: "トルク、トラクション、完全なるカオス —— 成功のために設計。",
+        features: ["2つのスピードモード：ノーマル＆ターボ"]
       },
       {
-        name: "オフロードキング",
-        description: "モンスターのように構築され、夢のように走る。"
+        name: "RCドリフトストーム",
+        description: "ドリフト、スプリント、そして電動精密で魅了する。",
+        features: ["45〜60分間プレイ可能"]
       },
       {
-        name: "ファニーフィッシング",
-        description: "光る、持ち運び可能、子供に人気。"
-      }
+        name: "RCスパークGT",
+        description: "軽量設計でRCドリフトレースに最適。",
+        features: ["超軽量ボディ＆スピード"]
+      },
+      {
+        name: "RCコンバットランナー",
+        description: "タフなRCアクションに最適なカモデザイン。",
+        features: ["カモ柄ボディでアドベンチャー"]
+      },
+      {
+        name: "RCカモブレイザー",
+        description: "カモフラージュデザイン、過酷な地形を征服するために設計。",
+        features: ["征服のためのカモボディ"]
+      },
+      {
+        name: "モデル番号: VERC3457-G1",
+        description: "スピード、パワー、カモフラージュアドベンチャー。",
+        features: ["パワープレイ用設計"]
+      },
+      {
+        name: "モデル番号: VERC3457-MG",
+        description: "ミリタリーグレードのセダン、究極のミッションに対応。",
+        features: ["高精度マルチディレクションコントロール"]
+      },
+      
     ]
   },
   certifications: {
@@ -593,20 +765,44 @@ const textRU = {
     ]
   },
   products: {
-    title: "RC Машины, Литые Игрушки, Полуэлектронные Продукты",
+    title: "Радиоуправляемые игрушки, Литые игрушки, Полуэлектронные устройства",
     items: [
       {
         name: "RC Нитро Зверь",
-        description: "Крутящий момент, сцепление, полный хаос — создано для бизнеса."
+        description: "Крутящий момент, сцепление и полный хаос — создано для успеха.",
+        features: ["2 режима скорости: Обычный и Турбо"]
       },
       {
-        name: "Внедорожный Король",
-        description: "Создан как зверь. Едет как мечта."
+        name: "RC Шторм Дрифта",
+        description: "Дрифтуйте, ускоряйтесь и поражайте точностью электрической мощности.",
+        features: ["45–60 минут игры"]
       },
       {
-        name: "Веселая Рыбалка",
-        description: "Светящийся, портативный и любимый детьми."
-      }
+        name: "RC Искра GT",
+        description: "Лёгкая конструкция, идеальна для дрифт-гонок RC.",
+        features: ["Ультралёгкий корпус и скорость"]
+      },
+      {
+        name: "RC Боевой Бегун",
+        description: "Камуфляжный дизайн для суровых RC-приключений.",
+        features: ["Камуфляжный корпус для приключений"]
+      },
+      {
+        name: "RC Камуфляжный Блейзер",
+        description: "Камуфляжный дизайн, созданный для покорения сложных ландшафтов.",
+        features: ["Камуфляжный корпус для завоеваний"]
+      },
+      {
+        name: "Модель №: VERC3457-G1",
+        description: "Скорость, мощь и камуфляжные приключения.",
+        features: ["Создан для мощной игры"]
+      },
+      {
+        name: "Модель №: VERC3457-MG",
+        description: "Седан военного класса, готовый к решающим миссиям.",
+        features: ["Прецизионное многопозиционное управление"]
+      },
+      
     ]
   },
   certifications: {
@@ -674,20 +870,45 @@ const textIT = {
     ]
   },
   products: {
-    title: "Auto RC, Giocattoli Die-Cast, Semi-Elettronici",
+    title: "Giocattoli RC, Giocattoli in Metallo Pressofuso, Semi-Elettronici",
     items: [
       {
         name: "RC Nitro Bestia",
-        description: "Coppia, trazione, caos totale — costruito per il business."
+        description: "Coppia, trazione e caos totale – progettato per il successo.",
+        features: ["2 Modalità di Velocità: Normale e Turbo"]
       },
       {
-        name: "Re Fuoristrada",
-        description: "Costruito come una bestia. Guida come un sogno."
+        name: "RC Tempesta di Drift",
+        description: "Derapa, accelera e impressiona con precisione elettrica.",
+        features: ["45–60 minuti di gioco"]
       },
       {
-        name: "Pesca Divertente",
-        description: "Illuminato, portatile e approvato dai bambini."
-      }
+        name: "RC Scintilla GT",
+        description: "Design leggero, perfetto per le gare di drift RC.",
+        features: ["Struttura Ultrallegra & Veloce"]
+      },
+      {
+        name: "RC Corridore da Combattimento",
+        description: "Design mimetico per intense azioni RC.",
+        features: ["Scocca Mimetica per Avventure"]
+      },
+      {
+        name: "RC Blazer Camuffato",
+        description: "Design mimetico, creato per conquistare i terreni più estremi.",
+        features: ["Carrozzeria Mimetica per Conquistare"]
+      },
+      {
+        name: "Numero Modello: VERC3457-G1",
+        description: "Velocità, potenza e avventura mimetica.",
+        features: ["Costruito per Gioco Potente"]
+      },
+      {
+        name: "Numero Modello: VERC3457-MG",
+        description: "Berlina di grado militare, pronta per missioni definitive.",
+        features: ["Controllo Multidirezionale di Precisione"]
+      },
+
+
     ]
   },
   certifications: {
@@ -754,20 +975,44 @@ const textZH = {
     ]
   },
   products: {
-    title: "RC汽车、压铸玩具、半电子产品",
+    title: "遥控玩具、压铸玩具、半电子产品",
     items: [
       {
-        name: "RC氮气野兽",
-        description: "扭矩、牵引力、完全混乱 — 为商业而建。"
+        name: "RC 硝基野兽",
+        description: "扭矩、牵引力与极致混乱 —— 为成功而生。",
+        features: ["2种速度模式：普通&涡轮"]
       },
       {
-        name: "越野之王",
-        description: "像野兽一样构建，像梦想一样驾驶。"
+        name: "RC 漂移风暴",
+        description: "漂移、冲刺，以电动精准征服全场。",
+        features: ["45–60分钟续航"]
       },
       {
-        name: "有趣的钓鱼",
-        description: "发光、便携、孩子们喜欢。"
-      }
+        name: "RC火花GT",
+        description: "轻量化设计，完美适合RC漂移赛。",
+        features: ["超轻量构造与速度"]
+      },
+      {
+        name: "RC战斗跑者",
+        description: "适合激烈RC行动的迷彩设计。",
+        features: ["迷彩车身，适合冒险"]
+      },
+      {
+        name: "RC迷彩疾风",
+        description: "迷彩图案设计，打造征服极限地形的利器。",
+        features: ["迷彩车身助力征服"]
+      },
+      {
+        name: "型号: VERC3457-G1",
+        description: "速度、动力与迷彩探险。",
+        features: ["专为强劲游戏而生"]
+      },
+      {
+        name: "型号: VERC3457-MG",
+        description: "军用级轿车，专为终极任务打造。",
+        features: ["精密多方向控制"]
+      },
+      
     ]
   },
   certifications: {
@@ -851,6 +1096,102 @@ function loadLanguage(text) {
   document.getElementById('product2-desc').innerText = text.products.items[1].description;
   document.getElementById('product3-name').innerText = text.products.items[2].name;
   document.getElementById('product3-desc').innerText = text.products.items[2].description;
+
+  // Update Features for Product 1
+  const features1 = document.querySelector('#product1-features');
+  features1.innerHTML = '';
+  text.products.items[0].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features1.appendChild(li);
+  });
+
+  // Update Features for Product 2
+  const features2 = document.querySelector('#product2-features');
+  features2.innerHTML = '';
+  text.products.items[1].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features2.appendChild(li);
+  });
+
+  // Update Features for Product 3
+  const features3 = document.querySelector('#product3-features');
+  features3.innerHTML = '';
+  text.products.items[2].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features3.appendChild(li);
+  });
+
+  // Update Product 4
+  document.getElementById('product4-name').innerText = text.products.items[3].name;
+  document.getElementById('product4-desc').innerText = text.products.items[3].description;
+
+  // Update Features for Product 4
+  const features4 = document.querySelector('#product4-features');
+  features4.innerHTML = '';
+  text.products.items[3].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features4.appendChild(li);
+  });
+
+  // Update Product 5
+  document.getElementById('product5-name').innerText = text.products.items[4].name;
+  document.getElementById('product5-desc').innerText = text.products.items[4].description;
+
+  // Update Features for Product 5
+  const features5 = document.querySelector('#product5-features');
+  features5.innerHTML = '';
+  text.products.items[4].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features5.appendChild(li);
+  });
+
+  // Update Product 6
+  document.getElementById('product6-name').innerText = text.products.items[5].name;
+  document.getElementById('product6-desc').innerText = text.products.items[5].description;
+
+  // Update Features for Product 6
+  const features6 = document.querySelector('#product6-features');
+  features6.innerHTML = '';
+  text.products.items[5].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features6.appendChild(li);
+  });
+
+  // Update Product 7
+  document.getElementById('product7-name').innerText = text.products.items[6].name;
+  document.getElementById('product7-desc').innerText = text.products.items[6].description;
+
+  // Update Features for Product 7
+  const features7 = document.querySelector('#product7-features');
+  features7.innerHTML = '';
+  text.products.items[6].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features7.appendChild(li);
+  });
+
+  // Update Product 8
+  document.getElementById('product8-name').innerText = text.products.items[7].name;
+  document.getElementById('product8-desc').innerText = text.products.items[7].description;
+
+  // Update Features for Product 8
+  const features8 = document.querySelector('#product8-features');
+  features8.innerHTML = '';
+  text.products.items[7].features.forEach(feature => {
+    const li = document.createElement('li');
+    li.innerText = feature;
+    features8.appendChild(li);
+  });
+
+
+
+
 
   // Certifications Section
   document.getElementById('certifications-title').innerText = text.certifications.title;
@@ -1346,6 +1687,100 @@ form.addEventListener('submit', function(event) {
     alert('Oops! Something went wrong. Please try again.');
   });
 });
+
+// ===============================
+// Auto-Sliding Carousel Logic
+// ===============================
+
+const carousel = document.getElementById('product-carousel');
+let autoScrollInterval;
+let isUserInteracting = false;
+
+// Function to start auto-scrolling
+function startAutoScroll() {
+  autoScrollInterval = setInterval(() => {
+    if (!isUserInteracting) {
+      carousel.scrollBy({
+        left: 320, // Move 320px (slightly more than card width to reach next card)
+        behavior: 'smooth'
+      });
+    }
+  }, 5000); // Every 3 seconds
+}
+
+// Function to stop auto-scrolling
+function stopAutoScroll() {
+  clearInterval(autoScrollInterval);
+}
+
+// Start auto-scroll on page load
+startAutoScroll();
+
+// Pause when user manually scrolls or touches
+carousel.addEventListener('mousedown', () => {
+  isUserInteracting = true;
+  stopAutoScroll();
+});
+carousel.addEventListener('touchstart', () => {
+  isUserInteracting = true;
+  stopAutoScroll();
+});
+
+// Resume after a short delay when user stops interacting
+carousel.addEventListener('mouseup', () => {
+  isUserInteracting = false;
+  setTimeout(startAutoScroll, 2000); // Resume after 2s
+});
+carousel.addEventListener('touchend', () => {
+  isUserInteracting = false;
+  setTimeout(startAutoScroll, 2000); // Resume after 2s
+});
+
+// ===============================
+// Snap Carousel to Nearest Card on Drag End
+// ===============================
+
+function snapToNearestCard() {
+  const cardWidth = 320 + 32; // 320px card + 32px gap (2rem = 32px gap)
+  const scrollLeft = carousel.scrollLeft;
+  const nearestIndex = Math.round(scrollLeft / cardWidth);
+  const snapPosition = nearestIndex * cardWidth;
+
+  carousel.scrollTo({
+    left: snapPosition,
+    behavior: 'smooth'
+  });
+}
+
+// Modify mouseup/touchend listeners to also snap
+carousel.addEventListener('mouseup', () => {
+  isUserInteracting = false;
+  snapToNearestCard();
+  setTimeout(startAutoScroll, 2000); // Resume auto-scroll after 2s
+});
+
+carousel.addEventListener('touchend', () => {
+  isUserInteracting = false;
+  snapToNearestCard();
+  setTimeout(startAutoScroll, 2000); // Resume auto-scroll after 2s
+});
+
+// ===============================
+// Color Image Switching Logic
+// ===============================
+
+document.querySelectorAll('.color-selector').forEach(selector => {
+  const card = selector.closest('.card-container'); 
+  const mainImg = card.querySelector('.foreground-img img');
+
+  selector.querySelectorAll('.color-dot').forEach(dot => {
+    dot.addEventListener('click', () => {
+      const imgFileName = dot.getAttribute('data-img');
+      mainImg.src = `${imgFileName}`;
+    });
+  });
+});
+
 
 
 

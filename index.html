@@ -181,80 +181,233 @@
   <section id="products" class="products-section">
     <div class="container">
       <h2 class="section-title" id="products-title">RC Cars, Die-Cast Toys, Semi-Electronics</h2>
-      <div class="product-card-grid">
-        
-        <!-- Product Card 1 -->
-        <div class="card-container">
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-image background-img">
-                <img src="assets/img/products/background.jpg" alt="BG" />
-              </div>
-              <div class="foreground-img">
-                <img src="assets/img/products/diecasttra.png" alt="Diecast" />
-              
-                <ul class="card-features">
-                  <li>2 Speed Modes: Normal & Turbo</li>
-                  <li>4 Modes of Headlights</li>
-                  <li>75 Feet Remote Range</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card-content">
-              <h3 id="product1-name">RC Nitro Beast</h3>
-              <p id="product1-desc">Torque, traction, total chaos — built for business.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Product Card 2 -->
-        <div class="card-container">
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-image background-img">
-                <img src="assets/img/products/background.jpg" alt="BG" />
-              </div>
-              <div class="foreground-img">
-                <img src="assets/img/products/rc-toy.png" alt="RC Truck" />
+      <div class="product-card-carousel" id="product-carousel">
+        <div class="carousel-inner">
 
-                <ul class="card-features">
-                  <li>High Power Motor & Smooth Suspension</li>
-                  <li>Multi-direction Drive + Drift</li>
-                  <li>60 Min Runtime, C-Type Charging</li>
-                </ul>
+          <!-- Product Card 1 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/1-black.png" alt="Diecast" />
+                
+                  <ul class="card-features" id="product1-features">
+                    <li>2 Speed Modes: Normal & Turbo</li>
+                  </ul>
+
+                </div>
+                
               </div>
-            </div>
-            <div class="card-content">
-              <h3 id="product2-name">Off-Road King</h3>
-              <p id="product2-desc">Built like a beast. Drives like a dream.</p>
+              <div class="card-content">
+                <h3 id="product1-name">RC Nitro Beast</h3>
+                <p id="product1-desc">Torque, traction, total chaos — built for business.</p>
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-color: #070709;" data-img="assets/img/cars/1-black.png"></div>
+                  <div class="color-dot" style="background-color: #41D09A;" data-img="assets/img/cars/1-green.png"></div>
+                  <div class="color-dot" style="background-color: #D4D3CF;" data-img="assets/img/cars/1-grey.png"></div>
+                  <div class="color-dot" style="background-color: #FD7D13;" data-img="assets/img/cars/1-orange.png"></div>
+                  <div class="color-dot" style="background-color: #F4BD08;" data-img="assets/img/cars/1-yellow.png"></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Product Card 3 -->
-        <div class="card-container">
-          <div class="card">
-            <div class="card-inner">
-              <div class="card-image background-img">
-                <img src="assets/img/products/background.jpg" alt="BG" />
+    
+          <!-- Product Card 2 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/2-black.png" alt="RC Drift Storm" />
+
+                  <ul class="card-features" id="product2-features">
+                    <li>C-Type USB Charging + 45–60 Min Playtime</li>
+                  </ul>
+                </div>
               </div>
-              <div class="foreground-img">
-                <img src="assets/img/products/sem-electronic.png" alt="Funny Fishing" />
-                <ul class="card-features">
-                  <li>24 Colorful Fishes with Magnetic Rods</li>
-                  <li>Colorful Lights & USB Charging</li>
-                  <li>Wheels & Handle for Easy Moving</li>
-                </ul>
+              <div class="card-content">
+                <h3 id="product2-name">RC Drift Storm</h3>
+                <p id="product2-desc">Slide, sprint, and steal the show with electric-powered precision.</p>
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-color: #16151B;" data-img="assets/img/cars/2-black.png"></div>
+                  <div class="color-dot" style="background-color: #04A3FC;" data-img="assets/img/cars/2-blue.png"></div>
+                  <div class="color-dot" style="background-color: #BBB3C0;" data-img="assets/img/cars/2-grey.png"></div>
+                  <div class="color-dot" style="background-color: #FE0019;" data-img="assets/img/cars/2-red.png"></div>
+                </div>
               </div>
-              
-            </div>
-            <div class="card-content">
-              <h3 id="product3-name">Funny Fishing</h3>
-              <p id="product3-desc">Light-up, portable, and kid-approved.</p>
             </div>
           </div>
+    
+          <!-- Product Card 3 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/3-black.png" alt="RC Spark GT" />
+
+                  <ul class="card-features" id="product3-features">
+                    <li>Ultra-Light Build & Speed</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 id="product3-name">RC Spark GT</h3>
+                <p id="product3-desc">Lightweight design, perfect for RC drift racing.</p>
+
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-color: #1F2227;" data-img="assets/img/cars/3-black.png"></div>
+                  <div class="color-dot" style="background-color: #1385D8;" data-img="assets/img/cars/3-blue.png"></div>
+                  <div class="color-dot" style="background-color: #615B69;" data-img="assets/img/cars/3-grey.png"></div>
+                  <div class="color-dot" style="background-color: #CA2C35;" data-img="assets/img/cars/3-red.png"></div>
+                  <div class="color-dot" style="background-color: #FFD765;" data-img="assets/img/cars/3-yellow.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/4-camo.png" alt="RC Combat Runner" />
+                  <ul class="card-features" id="product4-features">
+                    <li>Camo Body for Rugged Play</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 id="product4-name">RC Combat Runner</h3>
+                <p id="product4-desc">Camo design for tough RC action.</p>
+
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-image: url('assets/img/mask/camo-4.png'); background-size: cover;" data-img="assets/img/cars/4-camo.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          
+          <!-- Product Card 5 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/5-camo.png" alt="RC Camo Blazer" />
+                  <ul class="card-features" id="product5-features">
+                    <li>Camo Build for Conquest</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 id="product5-name">RC Camo Blazer</h3>
+                <p id="product5-desc">Camo design, built for ultimate terrain conquest.</p>
+
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-image: url('assets/img/mask/camo-5.png'); background-size: cover;" data-img="assets/img/cars/5-camo.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/6-camo.png" alt="Model No. VERC3457-G1" />
+                  <ul class="card-features" id="product6-features">
+                    <li>Built for Power Play</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 id="product6-name">Model No.: VERC3457-G1</h3>
+                <p id="product6-desc">Speed, Power, and Camo Adventure.</p>
+
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-image: url('assets/img/mask/camo-6.png'); background-size: cover;" data-img="assets/img/cars/6-camo.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/7-camo.png" alt="Model No. VERC3457-MG" />
+                  <ul class="card-features" id="product7-features">
+                    <li>🚀 (Feature line to be added)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 id="product7-name">Model No.: VERC3457-MG</h3>
+                <p id="product7-desc">🌟 (Subtitle to be added)</p>
+
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-image: url('assets/img/mask/camo-7.png'); background-size: cover;" data-img="assets/img/cars/7-camo.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div class="card-container">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-image background-img">
+                  <img src="assets/img/products/background.jpg" alt="BG" />
+                </div>
+                <div class="foreground-img">
+                  <img src="assets/img/cars/8-camo.png" alt="Model No. VERC3458-G1" />
+                  <ul class="card-features" id="product8-features">
+                    <li>🚀 (Feature line to be added)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <h3 id="product8-name">Model No.: VERC3458-G1</h3>
+                <p id="product8-desc">🌟 (Subtitle to be added)</p>
+
+                <!-- Color Selection Dots -->
+                <div class="color-selector">
+                  <div class="color-dot" style="background-image: url('assets/img/mask/camo-8.png'); background-size: cover;" data-img="assets/img/cars/8-camo.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-  
       </div>
     </div>
   </section>
